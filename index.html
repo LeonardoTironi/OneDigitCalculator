@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js"></script>
+</head>
+    <body>
+        <textarea name="math" id="screen" cols="16" rows="2"></textarea>
+        <table>
+            <tr>
+                <td><button class="num" onclick="newNum(7)">7</button></td>
+                <td><button class="num" onclick="newNum(8)">8</button></td>
+                <td><button class="num" onclick="newNum(9)">9</button></td>
+                <td><button class="operation" onclick="newOperation('+')">+</button></td>
+            </tr>
+            <tr>
+                <td><button class="num" onclick="newNum(4)">4</button></td>
+                <td><button class="num" onclick="newNum(5)">5</button></td>
+                <td><button class="num" onclick="newNum(6)">6</button></td>
+                <td><button class="operation" onclick="newOperation('-')">-</button></td>
+            </tr>
+            <tr>
+                <td><button class="num" onclick="newNum(1)">1</button></td>
+                <td><button class="num" onclick="newNum(2)">2</button></td>
+                <td><button class="num" onclick="newNum(3)">3</button></td>
+                <td><button class="operation" onclick="newOperation('*')">*</button></td>
+            </tr>
+            <tr>
+                <td><button class="clear" onclick="removeAll()">C</button></td>
+                <td><button class="num" onclick="newNum(0)">0</button></td>
+                <td><button class="result" onclick="math()">=</button></td>
+                <td><button class="operation" onclick="newOperation('/')">/</button></td>
+            </tr>
+        </table>
+    </body>
+</html>
