@@ -1,6 +1,6 @@
 function newNum(num){
     const element = document.getElementById("screen");
-    text = element.innerHTML
+    let text = element.innerHTML
     if (text[1]==undefined){
         element.innerHTML=num;
     }
@@ -15,7 +15,7 @@ function newNum(num){
 }
 function newOperation(operation){
     const element = document.getElementById("screen");
-    text = element.innerHTML
+    let text = element.innerHTML
     if(text[1]==undefined && text[0]!=undefined){
         element.innerHTML+=operation;
         console.log(operation)
@@ -33,7 +33,7 @@ function removeAll(){
 
 function math(){
     const element = document.getElementById("screen");
-    text = element.innerHTML;
+    let text = element.innerHTML;
     firstNum = Number(text[0]);
     secondNum = Number(text[2]);
     
